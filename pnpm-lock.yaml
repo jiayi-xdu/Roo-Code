@@ -22,9 +22,6 @@ importers:
       '@dotenvx/dotenvx':
         specifier: ^1.34.0
         version: 1.44.2
-      '@types/vscode':
-        specifier: ^1.102.0
-        version: 1.102.0
       '@vscode/vsce':
         specifier: 3.3.2
         version: 3.3.2
