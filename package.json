@@ -1,8 +1,14 @@
 {
-	"name": "roo-code",
+	"name": "roo-code-huawei",
+	"version": "3.25.14",
 	"packageManager": "pnpm@10.8.1",
 	"engines": {
-		"node": "20.19.2"
+		"node": "20.19.2",
+		"vscode": "^1.102.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/RooCodeInc/Roo-Code.git"
 	},
 	"scripts": {
 		"preinstall": "node scripts/bootstrap.mjs",
@@ -42,7 +48,8 @@
 		"prettier": "^3.4.2",
 		"rimraf": "^6.0.1",
 		"turbo": "^2.5.3",
-		"typescript": "^5.4.5"
+		"typescript": "^5.4.5",
+		"@types/vscode": "^1.102.0"
 	},
 	"lint-staged": {
 		"*.{js,jsx,ts,tsx,json,css,md}": [
@@ -57,6 +64,16 @@
 			"brace-expansion": ">=2.0.2",
 			"form-data": ">=4.0.4",
 			"bluebird": ">=3.7.2"
-		}
+		},
+		"onlyBuiltDependencies": [
+			"@tailwindcss/oxide",
+			"@vscode/vsce-sign",
+			"better-sqlite3",
+			"core-js",
+			"esbuild",
+			"keytar",
+			"puppeteer-chromium-resolver",
+			"sharp"
+		]
 	}
 }
